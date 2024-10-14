@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+body {
+  font-family: Cairo !important;
+}
 /* ------------------------------------------------- Large Screen. 1200 ---------------------------------------------------*/
 @media (min-width: 1440px) and (max-width: 1600px) {
   .em_sc_100 {

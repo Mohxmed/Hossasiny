@@ -1,0 +1,2659 @@
+/*** uncss> filename: C:/Users/user/Desktop/Alhossainy - Ahmed Qandel/hossainy-website/assets/css/bootstrap.min.css ***/
+@charset "UTF-8"; /*!
+ * Bootstrap  v5.3.3 (https://getbootstrap.com/)
+ * Copyright 2011-2024 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-black: #000;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-primary-rgb: 13, 110, 253;
+  --bs-secondary-rgb: 108, 117, 125;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb: 220, 53, 69;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-primary-text-emphasis: #052c65;
+  --bs-secondary-text-emphasis: #2b2f32;
+  --bs-success-text-emphasis: #0a3622;
+  --bs-info-text-emphasis: #055160;
+  --bs-warning-text-emphasis: #664d03;
+  --bs-danger-text-emphasis: #58151c;
+  --bs-light-text-emphasis: #495057;
+  --bs-dark-text-emphasis: #495057;
+  --bs-primary-bg-subtle: #cfe2ff;
+  --bs-secondary-bg-subtle: #e2e3e5;
+  --bs-success-bg-subtle: #d1e7dd;
+  --bs-info-bg-subtle: #cff4fc;
+  --bs-warning-bg-subtle: #fff3cd;
+  --bs-danger-bg-subtle: #f8d7da;
+  --bs-light-bg-subtle: #fcfcfd;
+  --bs-dark-bg-subtle: #ced4da;
+  --bs-primary-border-subtle: #9ec5fe;
+  --bs-secondary-border-subtle: #c4c8cb;
+  --bs-success-border-subtle: #a3cfbb;
+  --bs-info-border-subtle: #9eeaf9;
+  --bs-warning-border-subtle: #ffe69c;
+  --bs-danger-border-subtle: #f1aeb5;
+  --bs-light-border-subtle: #e9ecef;
+  --bs-dark-border-subtle: #adb5bd;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-bg: #fff;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-emphasis-color: #000;
+  --bs-emphasis-color-rgb: 0, 0, 0;
+  --bs-secondary-color: rgba(33, 37, 41, 0.75);
+  --bs-secondary-color-rgb: 33, 37, 41;
+  --bs-secondary-bg: #e9ecef;
+  --bs-secondary-bg-rgb: 233, 236, 239;
+  --bs-tertiary-color: rgba(33, 37, 41, 0.5);
+  --bs-tertiary-color-rgb: 33, 37, 41;
+  --bs-tertiary-bg: #f8f9fa;
+  --bs-tertiary-bg-rgb: 248, 249, 250;
+  --bs-heading-color: inherit;
+  --bs-link-color: #0d6efd;
+  --bs-link-color-rgb: 13, 110, 253;
+  --bs-link-decoration: underline;
+  --bs-link-hover-color: #0a58ca;
+  --bs-link-hover-color-rgb: 10, 88, 202;
+  --bs-code-color: #d63384;
+  --bs-highlight-color: #212529;
+  --bs-highlight-bg: #fff3cd;
+  --bs-border-width: 1px;
+  --bs-border-style: solid;
+  --bs-border-color: #dee2e6;
+  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+  --bs-border-radius: 0.375rem;
+  --bs-border-radius-sm: 0.25rem;
+  --bs-border-radius-lg: 0.5rem;
+  --bs-border-radius-xl: 1rem;
+  --bs-border-radius-xxl: 2rem;
+  --bs-border-radius-2xl: var(--bs-border-radius-xxl);
+  --bs-border-radius-pill: 50rem;
+  --bs-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --bs-box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --bs-box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  --bs-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+  --bs-focus-ring-width: 0.25rem;
+  --bs-focus-ring-opacity: 0.25;
+  --bs-focus-ring-color: rgba(13, 110, 253, 0.25);
+  --bs-form-valid-color: #198754;
+  --bs-form-valid-border-color: #198754;
+  --bs-form-invalid-color: #dc3545;
+  --bs-form-invalid-border-color: #dc3545;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+body {
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  background-color: var(--bs-body-bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--bs-heading-color);
+}
+h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 1.75rem;
+  }
+}
+h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+h5 {
+  font-size: 1.25rem;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+ul {
+  padding-left: 2rem;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+a {
+  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+  text-decoration: underline;
+}
+a:hover {
+  --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
+}
+img {
+  vertical-align: middle;
+}
+button {
+  border-radius: 0;
+}
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+button {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+button {
+  text-transform: none;
+}
+[type="button"],
+button {
+  -webkit-appearance: button;
+}
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+}
+::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-fields-wrapper,
+::-webkit-datetime-edit-hour-field,
+::-webkit-datetime-edit-minute,
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-text,
+::-webkit-datetime-edit-year-field {
+  padding: 0;
+}
+::-webkit-inner-spin-button {
+  height: auto;
+}
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+::file-selector-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+.container {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+:root {
+  --bs-breakpoint-xs: 0;
+  --bs-breakpoint-sm: 576px;
+  --bs-breakpoint-md: 768px;
+  --bs-breakpoint-lg: 992px;
+  --bs-breakpoint-xl: 1200px;
+  --bs-breakpoint-xxl: 1400px;
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+@media (min-width: 576px) {
+  .col-sm-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .col-sm-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+  .col-sm-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .col-md-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .col-lg-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+  .col-lg-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .col-xl-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .col-xl-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+}
+.form-control[type="file"]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}
+.form-control::file-selector-button {
+  padding: 0.375rem 0.75rem;
+  margin: -0.375rem -0.75rem;
+  -webkit-margin-end: 0.75rem;
+  margin-inline-end: 0.75rem;
+  color: var(--bs-body-color);
+  background-color: var(--bs-tertiary-bg);
+  pointer-events: none;
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+  border-inline-end-width: var(--bs-border-width);
+  border-radius: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .form-control::file-selector-button {
+    transition: none;
+  }
+}
+.form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
+  background-color: var(--bs-secondary-bg);
+}
+.form-control:hover:not(:disabled):not([readonly])::file-selector-button {
+  background-color: var(--bs-secondary-bg);
+}
+.form-control-sm::file-selector-button {
+  padding: 0.25rem 0.5rem;
+  margin: -0.25rem -0.5rem;
+  -webkit-margin-end: 0.5rem;
+  margin-inline-end: 0.5rem;
+}
+.form-control-lg::file-selector-button {
+  padding: 0.5rem 1rem;
+  margin: -0.5rem -1rem;
+  -webkit-margin-end: 1rem;
+  margin-inline-end: 1rem;
+}
+.form-control-color:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}
+[data-bs-theme="dark"]
+  .form-switch
+  .form-check-input:not(:checked):not(:focus) {
+  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 255, 255, 0.25%29'/%3e%3c/svg%3e");
+}
+.form-floating > .form-control-plaintext:not(:-moz-placeholder-shown),
+.form-floating > .form-control:not(:-moz-placeholder-shown) {
+  padding-top: 1.625rem;
+  padding-bottom: 0.625rem;
+}
+.form-floating > .form-control:not(:-moz-placeholder-shown) ~ label {
+  color: rgba(var(--bs-body-color-rgb), 0.65);
+  transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+}
+.form-floating > .form-control:not(:-moz-placeholder-shown) ~ label::after {
+  position: absolute;
+  inset: 1rem 0.375rem;
+  z-index: -1;
+  height: 1.5em;
+  content: "";
+  background-color: var(--bs-body-bg);
+  border-radius: var(--bs-border-radius);
+}
+.form-floating > :disabled ~ label {
+  color: #6c757d;
+}
+.form-floating > :disabled ~ label::after {
+  background-color: var(--bs-secondary-bg);
+}
+.input-group > .form-control:not(:focus).is-valid,
+.input-group > .form-floating:not(:focus-within).is-valid,
+.input-group > .form-select:not(:focus).is-valid,
+.was-validated .input-group > .form-control:not(:focus):valid,
+.was-validated .input-group > .form-floating:not(:focus-within):valid,
+.was-validated .input-group > .form-select:not(:focus):valid {
+  z-index: 3;
+}
+.input-group > .form-control:not(:focus).is-invalid,
+.input-group > .form-floating:not(:focus-within).is-invalid,
+.input-group > .form-select:not(:focus).is-invalid,
+.was-validated .input-group > .form-control:not(:focus):invalid,
+.was-validated .input-group > .form-floating:not(:focus-within):invalid,
+.was-validated .input-group > .form-select:not(:focus):invalid {
+  z-index: 4;
+}
+.btn:focus-visible {
+  color: var(--bs-btn-hover-color);
+  background-color: var(--bs-btn-hover-bg);
+  border-color: var(--bs-btn-hover-border-color);
+  outline: 0;
+  box-shadow: var(--bs-btn-focus-box-shadow);
+}
+.btn-check:focus-visible + .btn {
+  border-color: var(--bs-btn-hover-border-color);
+  outline: 0;
+  box-shadow: var(--bs-btn-focus-box-shadow);
+}
+.btn-check:checked + .btn:focus-visible,
+.btn.active:focus-visible,
+.btn.show:focus-visible,
+.btn:first-child:active:focus-visible,
+:not(.btn-check) + .btn:active:focus-visible {
+  box-shadow: var(--bs-btn-focus-box-shadow);
+}
+.btn-check:checked:focus-visible + .btn {
+  box-shadow: var(--bs-btn-focus-box-shadow);
+}
+.btn-link:focus-visible {
+  color: var(--bs-btn-color);
+}
+.nav-link:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.icon-link-hover:focus-visible > .bi {
+  transform: var(--bs-icon-link-transform, translate3d(0.25em, 0, 0));
+}
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+.visually-hidden-focusable:not(:focus):not(:focus-within):not(caption) {
+  position: absolute !important;
+}
+.text-center {
+  text-align: center !important;
+}
+/*# sourceMappingURL=bootstrap.min.css.map */
+/*** uncss> filename: C:/Users/user/Desktop/Alhossainy - Ahmed Qandel/hossainy-website/venobox/venobox.css ***/
+/* ------ venobox.css --------*/
+/* ------- overlay: change here background color and opacity ----- */
+
+/* ----- preloader - choose between CIRCLE, IOS, DOTS, QUADS ----- */
+
+/* circle preloader */
+
+/* IOS preloader */
+
+/*.vbox-preloader{
+    position:fixed; 
+    width:32px; 
+    height:32px;
+    left:50%; 
+    top:50%; 
+    margin-left:-16px; 
+    margin-top:-16px;
+    background-image: url(preload-ios.png);
+    text-indent: -100px;
+    overflow: hidden;
+    -webkit-animation: playload 1.4s steps(12) infinite;
+       -moz-animation: playload 1.4s steps(12) infinite;
+        -ms-animation: playload 1.4s steps(12) infinite;
+         -o-animation: playload 1.4s steps(12) infinite;
+            animation: playload 1.4s steps(12) infinite;
+}
+
+@-webkit-keyframes playload {
+   from { background-position:    0px; }
+     to { background-position: -384px; }
+}
+@-moz-keyframes playload {
+   from { background-position:    0px; }
+     to { background-position: -384px; }
+}
+@-ms-keyframes playload {
+   from { background-position:    0px; }
+     to { background-position: -384px; }
+}
+@-o-keyframes playload {
+   from { background-position:    0px; }
+     to { background-position: -384px; }
+}
+@keyframes playload {
+   from { background-position:    0px; }
+     to { background-position: -384px; }
+}
+*/
+
+/* dots preloader */
+/*
+.vbox-preloader{
+    position:fixed; 
+    width:32px; 
+    height:11px;
+    left:50%; 
+    top:50%; 
+    margin-left:-16px; 
+    margin-top:-16px;
+    background-image: url(preload-dots.png);
+    text-indent: -100px;
+    overflow: hidden;
+    -webkit-animation: playload 1.4s steps(24) infinite;
+       -moz-animation: playload 1.4s steps(24) infinite;
+        -ms-animation: playload 1.4s steps(24) infinite;
+         -o-animation: playload 1.4s steps(24) infinite;
+            animation: playload 1.4s steps(24) infinite;
+}
+
+@-webkit-keyframes playload {
+   from { background-position:    0px; }
+     to { background-position: -768px; }
+}
+@-moz-keyframes playload {
+   from { background-position:    0px; }
+     to { background-position: -768px; }
+}
+@-ms-keyframes playload {
+   from { background-position:    0px; }
+     to { background-position: -768px; }
+}
+@-o-keyframes playload {
+   from { background-position:    0px; }
+     to { background-position: -768px; }
+}
+@keyframes playload {
+   from { background-position:    0px; }
+     to { background-position: -768px; }
+}
+*/
+
+/* quads preloader */
+/*
+.vbox-preloader{
+    position:fixed; 
+    width:32px; 
+    height:10px;
+    left:50%; 
+    top:50%; 
+    margin-left:-16px; 
+    margin-top:-16px;
+    background-image: url(preload-quads.png);
+    text-indent: -100px;
+    overflow: hidden;
+    -webkit-animation: playload 1.4s steps(12) infinite;
+       -moz-animation: playload 1.4s steps(12) infinite;
+        -ms-animation: playload 1.4s steps(12) infinite;
+         -o-animation: playload 1.4s steps(12) infinite;
+            animation: playload 1.4s steps(12) infinite;
+}
+@-webkit-keyframes playload {
+   from { background-position:    0px; }
+     to { background-position: -384px; }
+}
+@-moz-keyframes playload {
+   from { background-position:    0px; }
+     to { background-position: -384px; }
+}
+@-ms-keyframes playload {
+   from { background-position:    0px; }
+     to { background-position: -384px; }
+}
+@-o-keyframes playload {
+   from { background-position:    0px; }
+     to { background-position: -384px; }
+}
+@keyframes playload {
+   from { background-position:    0px; }
+     to { background-position: -384px; }
+}
+*/
+/* ----- navigation ----- */
+/* ------- inline window ------ */
+
+/* ------- Video & iFrames window ------ */
+
+/* ------- PLease do NOT edit this! (or do it at your own risk) ------ */
+/*** uncss> filename: C:/Users/user/Desktop/Alhossainy - Ahmed Qandel/hossainy-website/assets/css/plugin_theme_css.css ***/
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+a {
+  background-color: transparent;
+}
+img {
+  border-style: none;
+}
+button {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button {
+  text-transform: none;
+}
+[type="button"],
+button {
+  -webkit-appearance: button;
+}
+[type="button"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+[type="button"]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+a:focus {
+  text-decoration: none;
+  outline: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+button:focus {
+  border-color: transparent;
+  outline-color: transparent;
+}
+a,
+i,
+li,
+ul {
+  font-style: normal;
+  font-weight: 400;
+}
+::-moz-selection {
+  background: #4fc1f0;
+  color: #888;
+  text-shadow: none;
+}
+::-moz-selection {
+  background: #4fc1f0;
+  color: #888;
+  text-shadow: none;
+}
+::selection {
+  background: #4fc1f0;
+  color: #888;
+  text-shadow: none;
+}
+::-moz-placeholder {
+  color: #888;
+  font-size: 16px;
+}
+::-webkit-input-placeholder {
+  color: #888;
+  font-size: 16px;
+}
+:-ms-input-placeholder {
+  color: #888;
+  font-size: 16px;
+}
+
+@charset "UTF-8"; /*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.2
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2024 Daniel Eden
+ */
+
+/* meanmenu css */
+
+/* slick css */
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: 0;
+}
+.slick-slider .slick-list,
+.slick-slider .slick-track {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:after,
+.slick-track:before {
+  display: table;
+  content: "";
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+/* aprova icon */
+
+@font-face {
+  font-family: aprova;
+  src: url(../fonts/aprova0698.eot?ef1ywa);
+  src: url(../fonts/aprova0698.eot?ef1ywa#iefix) format("embedded-opentype"),
+    url(../fonts/aprova0698.ttf?ef1ywa) format("truetype"),
+    url(../fonts/aprova0698.woff?ef1ywa) format("woff"),
+    url(../fonts/aprova0698.svg?ef1ywa#aprova) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+/* themify icon */
+
+@font-face {
+  font-family: themify;
+  src: url(../fonts/themify.eot?-fvbane);
+  src: url(../fonts/themify.eot?#iefix-fvbane) format("embedded-opentype"),
+    url(../fonts/themify.woff?-fvbane) format("woff"),
+    url(../fonts/themify.ttf?-fvbane) format("truetype"),
+    url(../fonts/themify.svg?-fvbane#themify) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*! 
+* @package IcoFont 
+* @version 1.0.1 
+* @author   
+* @copyright 2024 
+* @license - https://icofont.com/license/
+*/
+@font-face {
+  font-family: IcoFont;
+  font-weight: 400;
+  font-style: Regular;
+  src: url(../fonts/icofont.woff2) format("woff2"),
+    url(../fonts/icofont.woff) format("woff");
+}
+
+/*!
+ * Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2023 Fonticons, Inc.
+ */
+.fa {
+  font-family: var(--fa-style-family, "Font Awesome 6 Free");
+  font-weight: var(--fa-style, 900);
+}
+.fa,
+.fab,
+.fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+.fas {
+  font-family: "Font Awesome 6 Free";
+}
+.fab {
+  font-family: "Font Awesome 6 Brands";
+}
+.fa-map-marker:before {
+  content: "\f041";
+}
+.fa-phone-alt:before {
+  content: "\f879";
+}
+.fa-phone:before {
+  content: "\f095";
+}
+.fa-envelope:before {
+  content: "\f0e0";
+}
+.fa-home:before {
+  content: "\f015";
+}
+.fa-angle-up:before {
+  content: "\f106";
+}
+.fa-rss:before {
+  content: "\f09e";
+}
+.fa-sr-only-focusable:not(:focus),
+.sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+:host,
+:root {
+  --fa-style-family-brands: "Font Awesome 6 Brands";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+@font-face {
+  font-family: "Font Awesome 6 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(../webfonts/fa-brands-400.woff2) format("woff2"),
+    url(../webfonts/fa-brands-400.ttf) format("truetype");
+}
+.fab {
+  font-weight: 400;
+}
+.fa-google-plus-g:before {
+  content: "\f0d5";
+}
+.fa-facebook-f:before {
+  content: "\f39e";
+}
+.fa-x-twitter:before {
+  content: "\e61b";
+}
+:host,
+:root {
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+}
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(../webfonts/fa-regular-400.woff2) format("woff2"),
+    url(../webfonts/fa-regular-400.ttf) format("truetype");
+}
+:host,
+:root {
+  --fa-style-family-classic: "Font Awesome 6 Free";
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+}
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url(../webfonts/fa-solid-900.woff2) format("woff2"),
+    url(../webfonts/fa-solid-900.ttf) format("truetype");
+}
+.fas {
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-display: block;
+  font-weight: 400;
+  src: url(../webfonts/fa-brands-400.woff2) format("woff2"),
+    url(../webfonts/fa-brands-400.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-display: block;
+  font-weight: 900;
+  src: url(../webfonts/fa-solid-900.woff2) format("woff2"),
+    url(../webfonts/fa-solid-900.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-display: block;
+  font-weight: 400;
+  src: url(../webfonts/fa-regular-400.woff2) format("woff2"),
+    url(../webfonts/fa-regular-400.ttf) format("truetype");
+}
+@font-face {
+  font-family: "FontAwesome";
+  font-display: block;
+  src: url(../webfonts/fa-solid-900.woff2) format("woff2"),
+    url(../webfonts/fa-solid-900.ttf) format("truetype");
+}
+@font-face {
+  font-family: "FontAwesome";
+  font-display: block;
+  src: url(../webfonts/fa-brands-400.woff2) format("woff2"),
+    url(../webfonts/fa-brands-400.ttf) format("truetype");
+}
+@font-face {
+  font-family: "FontAwesome";
+  font-display: block;
+  src: url(../webfonts/fa-regular-400.woff2) format("woff2"),
+    url(../webfonts/fa-regular-400.ttf) format("truetype");
+  unicode-range: u+f003, u+f006, u+f014, u+f016-f017, u+f01a-f01b, u+f01d,
+    u+f022, u+f03e, u+f044, u+f046, u+f05c-f05d, u+f06e, u+f070, u+f087-f088,
+    u+f08a, u+f094, u+f096-f097, u+f09d, u+f0a0, u+f0a2, u+f0a4-f0a7, u+f0c5,
+    u+f0c7, u+f0e5-f0e6, u+f0eb, u+f0f6-f0f8, u+f10c, u+f114-f115, u+f118-f11a,
+    u+f11c-f11d, u+f133, u+f147, u+f14e, u+f150-f152, u+f185-f186, u+f18e,
+    u+f190-f192, u+f196, u+f1c1-f1c9, u+f1d9, u+f1db, u+f1e3, u+f1ea, u+f1f7,
+    u+f1f9, u+f20a, u+f247-f248, u+f24a, u+f24d, u+f255-f25b, u+f25d,
+    u+f271-f274, u+f278, u+f27b, u+f28c, u+f28e, u+f29c, u+f2b5, u+f2b7, u+f2ba,
+    u+f2bc, u+f2be, u+f2c0-f2c1, u+f2c3, u+f2d0, u+f2d2, u+f2d4, u+f2dc;
+}
+@font-face {
+  font-family: "FontAwesome";
+  font-display: block;
+  src: url(../webfonts/fa-v4compatibility.woff2) format("woff2"),
+    url(../webfonts/fa-v4compatibility.ttf) format("truetype");
+  unicode-range: u+f041, u+f047, u+f065-f066, u+f07d-f07e, u+f080, u+f08b,
+    u+f08e, u+f090, u+f09a, u+f0ac, u+f0ae, u+f0b2, u+f0d0, u+f0d6, u+f0e4,
+    u+f0ec, u+f10a-f10b, u+f123, u+f13e, u+f148-f149, u+f14c, u+f156, u+f15e,
+    u+f160-f161, u+f163, u+f175-f178, u+f195, u+f1f8, u+f219, u+f27a;
+}
+
+/*!
+ *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont3295.eot?v=4.5.0");
+  src: url("../fonts/fontawesome-webfontd41d.eot?#iefix&v=4.5.0")
+      format("embedded-opentype"),
+    url("../fonts/fontawesome-webfont3295.woff2?v=4.5.0") format("woff2"),
+    url("../fonts/fontawesome-webfont3295.woff?v=4.5.0") format("woff"),
+    url("../fonts/fontawesome-webfont3295.ttf?v=4.5.0") format("truetype"),
+    url("../fonts/fontawesome-webfont3295.svg?v=4.5.0#fontawesomeregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-home:before {
+  content: "\f015";
+}
+.fa-map-marker:before {
+  content: "\f041";
+}
+.fa-phone:before {
+  content: "\f095";
+}
+.fa-facebook-f:before {
+  content: "\f09a";
+}
+.fa-rss:before {
+  content: "\f09e";
+}
+.fa-envelope:before {
+  content: "\f0e0";
+}
+.fa-angle-up:before {
+  content: "\f106";
+}
+
+/*
+  	Flaticon icon font: Flaticon
+  	*/
+@font-face {
+  font-family: Flaticon;
+  src: url(../fonts/Flaticon.woff2) format("woff2"),
+    url(../fonts/Flaticon.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/**
+ * Swiper 6.4.11
+ * Most modern mobile touch slider and framework with hardware accelerated transitions
+ * https://swiperjs.com
+ *
+ * Copyright 2024-2024 Vladimir Kharlampidi
+ *
+ * Released under the MIT License
+ *
+ * Released on: February 6, 2024
+ */
+
+@font-face {
+  font-family: swiper-icons;
+  src: url("data:application/font-woff;charset=utf-8;base64, d09GRgABAAAAAAZgABAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAGRAAAABoAAAAci6qHkUdERUYAAAWgAAAAIwAAACQAYABXR1BPUwAABhQAAAAuAAAANuAY7+xHU1VCAAAFxAAAAFAAAABm2fPczU9TLzIAAAHcAAAASgAAAGBP9V5RY21hcAAAAkQAAACIAAABYt6F0cBjdnQgAAACzAAAAAQAAAAEABEBRGdhc3AAAAWYAAAACAAAAAj//wADZ2x5ZgAAAywAAADMAAAD2MHtryVoZWFkAAABbAAAADAAAAA2E2+eoWhoZWEAAAGcAAAAHwAAACQC9gDzaG10eAAAAigAAAAZAAAArgJkABFsb2NhAAAC0AAAAFoAAABaFQAUGG1heHAAAAG8AAAAHwAAACAAcABAbmFtZQAAA/gAAAE5AAACXvFdBwlwb3N0AAAFNAAAAGIAAACE5s74hXjaY2BkYGAAYpf5Hu/j+W2+MnAzMYDAzaX6QjD6/4//Bxj5GA8AuRwMYGkAPywL13jaY2BkYGA88P8Agx4j+/8fQDYfA1AEBWgDAIB2BOoAeNpjYGRgYNBh4GdgYgABEMnIABJzYNADCQAACWgAsQB42mNgYfzCOIGBlYGB0YcxjYGBwR1Kf2WQZGhhYGBiYGVmgAFGBiQQkOaawtDAoMBQxXjg/wEGPcYDDA4wNUA2CCgwsAAAO4EL6gAAeNpj2M0gyAACqxgGNWBkZ2D4/wMA+xkDdgAAAHjaY2BgYGaAYBkGRgYQiAHyGMF8FgYHIM3DwMHABGQrMOgyWDLEM1T9/w8UBfEMgLzE////P/5//f/V/xv+r4eaAAeMbAxwIUYmIMHEgKYAYjUcsDAwsLKxc3BycfPw8jEQA/gZBASFhEVExcQlJKWkZWTl5BUUlZRVVNXUNTQZBgMAAMR+E+gAEQFEAAAAKgAqACoANAA+AEgAUgBcAGYAcAB6AIQAjgCYAKIArAC2AMAAygDUAN4A6ADyAPwBBgEQARoBJAEuATgBQgFMAVYBYAFqAXQBfgGIAZIBnAGmAbIBzgHsAAB42u2NMQ6CUAyGW568x9AneYYgm4MJbhKFaExIOAVX8ApewSt4Bic4AfeAid3VOBixDxfPYEza5O+Xfi04YADggiUIULCuEJK8VhO4bSvpdnktHI5QCYtdi2sl8ZnXaHlqUrNKzdKcT8cjlq+rwZSvIVczNiezsfnP/uznmfPFBNODM2K7MTQ45YEAZqGP81AmGGcF3iPqOop0r1SPTaTbVkfUe4HXj97wYE+yNwWYxwWu4v1ugWHgo3S1XdZEVqWM7ET0cfnLGxWfkgR42o2PvWrDMBSFj/IHLaF0zKjRgdiVMwScNRAoWUoH78Y2icB/yIY09An6AH2Bdu/UB+yxopYshQiEvnvu0dURgDt8QeC8PDw7Fpji3fEA4z/PEJ6YOB5hKh4dj3EvXhxPqH/SKUY3rJ7srZ4FZnh1PMAtPhwP6fl2PMJMPDgeQ4rY8YT6Gzao0eAEA409DuggmTnFnOcSCiEiLMgxCiTI6Cq5DZUd3Qmp10vO0LaLTd2cjN4fOumlc7lUYbSQcZFkutRG7g6JKZKy0RmdLY680CDnEJ+UMkpFFe1RN7nxdVpXrC4aTtnaurOnYercZg2YVmLN/d/gczfEimrE/fs/bOuq29Zmn8tloORaXgZgGa78yO9/cnXm2BpaGvq25Dv9S4E9+5SIc9PqupJKhYFSSl47+Qcr1mYNAAAAeNptw0cKwkAAAMDZJA8Q7OUJvkLsPfZ6zFVERPy8qHh2YER+3i/BP83vIBLLySsoKimrqKqpa2hp6+jq6RsYGhmbmJqZSy0sraxtbO3sHRydnEMU4uR6yx7JJXveP7WrDycAAAAAAAH//wACeNpjYGRgYOABYhkgZgJCZgZNBkYGLQZtIJsFLMYAAAw3ALgAeNolizEKgDAQBCchRbC2sFER0YD6qVQiBCv/H9ezGI6Z5XBAw8CBK/m5iQQVauVbXLnOrMZv2oLdKFa8Pjuru2hJzGabmOSLzNMzvutpB3N42mNgZGBg4GKQYzBhYMxJLMlj4GBgAYow/P/PAJJhLM6sSoWKfWCAAwDAjgbRAAB42mNgYGBkAIIbCZo5IPrmUn0hGA0AO8EFTQAA")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+:root {
+  --swiper-theme-color: #007aff;
+}
+:root {
+  --swiper-navigation-size: 44px;
+}
+
+/*** uncss> filename: C:/Users/user/Desktop/Alhossainy - Ahmed Qandel/hossainy-website/style.css ***/
+/* === theme style   ==== */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+a {
+  color: #17161a;
+  transition: 0.5s;
+  text-decoration: none;
+}
+img {
+  border-radius: 10px !important;
+}
+a:hover {
+  text-decoration: none;
+  color: #0c5adb;
+}
+body {
+  color: #777777;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  font-family: Cairo, sans-serif;
+  line-height: 1.6;
+}
+p {
+  font-style: normal;
+}
+h2,
+h3,
+h4,
+h5,
+h3 a,
+h5 a {
+  font-family: Cairo, sans-serif !important;
+  font-style: normal;
+  margin-bottom: 0;
+  line-height: 1.2;
+  font-weight: 700;
+  transition: 0.5s;
+  font-size: 21px;
+  color: #00247e;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.slick-slider .col-lg-12 {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
+/*===================== Home 2 Header CSS ======================*/
+/* THEME UNIT TEST CSS */
+i {
+  font-style: italic;
+}
+i {
+  display: inline-block;
+}
+/* image aligment */
+.widget img {
+  max-width: 100%;
+}
+/* === style_w7 button ==== */
+/* button default style */
+/* video button i */
+/* button default br style */
+/* video button i */
+/* classic Button */
+/* === style_w3 ==== */
+/*button css*/
+/*=========================== 4.feature css ===========================*/
+/*====== home page 2 ======*/
+/*====== home page 3 ======*/
+/*====== home page 6 ======*/
+/*====== home page 8 ======*/
+/* ===== feature style 3d css ===== */
+/* left */
+/* right */
+/* up */
+/* down */
+/* zoom in */
+/* zoom out */
+/* tittle css */
+/* feature Front Face */
+/* feature Button */
+/* Feature Slug */
+/*CREATIVE FEATURE SECTION*/
+/*=========================== feature cursor css ===========================*/
+/* witr_cfeature9 */
+/*=========================== 5.feature2 css ===========================*/
+/* feature style 8-9 */
+/* witr_feature style 12 */
+/* witr_feature style 13 */
+/*=========================== 5.tab area css ===========================*/
+/*=========================== 5.play css ===========================*/
+/*=========================== 10.video css ===========================*/
+/* about slider */
+/*=========================== 6.about area css ===========================*/
+/*=========================== 6.service css ===========================*/
+/* ===== service style 3d css ===== */
+/* left */
+/* right */
+/* up */
+/* down */
+/* zoom in */
+/* zoom out */
+/* tittle css */
+/* Service Front Face */
+/* Service Service Button */
+/*CREATIVE SERVICE2 SECTION 2*/
+/* witr_custom2_icon */
+/* all_service2_color */
+/* SERVICE3 SECTION 2*/
+/* witr_service2_7 Style */
+/* witr_service2_9 Style */
+/*=========================== 7.process css ===========================*/
+/* PROCESS SECTION */
+/* .witr_process_icon i:hover .witr_back_process {
+     top:0;
+}
+ */
+/*=========================== 7.team css ===========================*/
+.slick-slide img {
+  display: inline-block !important;
+}
+/*team post icon */
+/* pt7 */
+/* content css */
+/*====== home page 2 ======*/
+/* social css */
+/*====== home page 3 ======*/
+/*======== social top css ===========*/
+/*======= social bottom css ========*/
+/*======= sungle team css ========*/
+/* cur_part_6 */
+/*======================== EM40 TEAM CSS =========================*/
+.em-team {
+  text-align: center;
+  position: relative;
+  transition: 0.5s;
+}
+.em-team-one {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 55px;
+}
+/* team image css */
+.em-team-content-image {
+}
+.em-team-content-image img {
+  width: 100%;
+  height: 470px;
+  object-fit: contain;
+}
+.em-team-content-waraper {
+  background-color: #fff;
+  bottom: -67px;
+  left: 0;
+  margin: 0 10px;
+  padding: 30px 0;
+  position: absolute;
+  right: 0;
+  box-shadow: 0px 0px 65px 0px rgb(0, 0, 0, 0.08);
+  transition: all 0.3s ease 0s;
+}
+.em-team-content-socials a {
+  background: #fff none repeat scroll 0% 0;
+  border-radius: 50%;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  margin: 14px 3px 0;
+  text-align: center;
+  width: 35px;
+  color: #0c5adb;
+}
+.em-team-content-socials {
+  position: relative;
+  transition: 0.5s;
+}
+.em-team-content-socials a:hover {
+  background: #0c5adbe6;
+  color: #fff;
+}
+.em-team:hover .em-team-content-waraper {
+  background: #0c5adbe6;
+  bottom: 0px;
+}
+.em-team:hover .em-team-content-socials {
+}
+/* team content */
+.em-content-title h5 {
+  font-size: 23px;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  transition: 0.5s;
+}
+.em-content-title h5 a {
+  font-weight: 700;
+}
+.em-content-subtitle {
+  font-size: 16px;
+  margin: 5px 0 0;
+  text-transform: capitalize;
+  transition: 0.5s;
+}
+.em-team:hover .em-content-title h5 a,
+.em-team:hover .em-content-title h5,
+.em-team:hover .em-content-subtitle {
+  color: #fff;
+}
+/* team social 5 */
+/* team content */
+/* team button */
+/* Team 7*/
+/* post team 8 css */
+/* team Post 9 */
+/* post team 10 css */
+/* post team 11 css */
+/* team 8 */
+/* team content */
+/* team 9*/
+/* team 12 style */
+/* back_view */
+/* team style */
+/*====== home page 3 ======*/
+/*======== social top css ===========*/
+/*======= social bottom css ========*/
+/* team 11 */
+/* team 13 style */
+/* witr_team_s14 */
+/* carsol imagess area css */
+/*=========================== 9.pricing css ===========================*/
+/* pricing list css */
+/* style 2 */
+/* style 3 */
+/* style 4 */
+/*=========================== 10.testomonial css ===========================*/
+/* single_creativeItem */
+/* testimonial style 7 */
+/*=========================== testomonial style 8 css ===========================*/
+/* witr_testi_s_9 */
+/* busi_testimonial */
+/* witr_testi_s_12 */
+/* testimonial_post_13 */
+/*====== home page 2 ======*/
+/*=========================== 10.blog css ===========================*/
+/*====== blog style 2 ======*/
+/* blog area css 5 */
+/*========= blog area css 6 ==========*/
+/* witr_blog_area8 */
+/* witr_blog_area9 */
+/* witr_blog_area 10 */
+/* witr_blog_area11 */
+/* witr_blog_area12 */
+/* witr_blog_area13 */
+/* witr_blog_area14 */
+/* witr_blog_area16 */
+/*=========================== 10.counter css ===========================*/
+/* content */
+/*====== style 2 ======*/
+/*====== style 4 ======*/
+/* style 5 */
+/*====== style 6 ======*/
+/*home page 4*/
+/*=========================== 10.other page css ===========================*/
+/*====== sing up page ======*/
+/*===================== mettle PORTFOLIO AREA CSS =========================*/
+/* single gallery css */
+/* load button css */
+/* portfolio icon css */
+/* single portfolio */
+/*style 1 */
+/* port style 3 */
+/* style 4 */
+/* style 3 */
+/* single portfolio2 */
+/*== Title Css ==*/
+/*======== Button css ==========*/
+/*============= call to action =============*/
+/*============= video icon ==============*/
+/*=========== Style 11 ============*/
+/*====== apps button =======*/
+/*====== single image area =======*/
+/*====== footer widget area css =======*/
+/* title */
+/* content */
+/* icon */
+/* tags css*/
+/*====== socials css =======*/
+/*====== Custom Icon css =======*/
+/* service2 style 4 css */
+/*====== blog page ======*/
+/*====== contact page ======*/
+/* ======== timeline area css ======== */
+/* single timeline */
+/* left border */
+/* circle border */
+/* title */
+/* witr_number_item css */
+/* timeline icon css */
+/* margin left spacing */
+/* margin right spacing */
+/* timeline bottom right text */
+/* icon bottom position */
+/* cursor imags area css */
+/* accordion area css */
+/* witr single cursor img */
+/*======== slick ========*/
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  position: absolute;
+  display: block;
+  padding: 0;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  background: #0c5adb;
+  z-index: 9;
+  opacity: 0;
+  border-radius: 0px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  top: 50%;
+  transform: translate(0px, -50%);
+  transition: 0.5s;
+  border: 0px solid #17161a;
+}
+.slick-prev {
+  left: -15px;
+}
+.slick-next {
+  right: -15px;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: #fff;
+  font-size: 25px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  content: "\f177";
+  font-family: FontAwesome !important;
+  line-height: inherit;
+  opacity: 1;
+}
+.slick-next:before {
+  content: "\f178";
+  font-family: FontAwesome !important;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  background: #00247e;
+  border-color: transparent;
+  outline-color: transparent;
+  outline: none;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  color: #fff;
+}
+.service_active:hover .slick-prev,
+.service_active:hover .slick-next,
+.witr_islidess_slick:hover .slick-prev,
+.witr_islidess_slick:hover .slick-next {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+/* cursor css */
+/* text widget */
+/* unoy */
+/* stasick tab area css */
+/* single video css */
+/* tab event css */
+/*========= tab 2 area ===========*/
+/* carsur_dots */
+/* =========================== DEFAULT CONTACT CSS ================================ */
+/*======== apartment contact css ==========*/
+/* Bottom Contact */
+/* COUNTDOWN CSS */
+/*================================= mailchim 1=================================== */
+/* mailchim 2 */
+/* mc4wp */
+/* === style_w2 ==== */
+/* new css */
+/* === style_w1 ==== */
+/*---------------------------------------- Don't change any css from here. If you need to change, Please use child theme. ------------------------------------------*/
+html,
+body {
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* box layout */
+/* end box layout */
+/*===================== solutech HEADING TOP AREA CSS =========================*/
+/* LEFT RIGHT CSS */
+.em40_header_area_main {
+}
+.solutech-header-top {
+  background: #0c5adb;
+  padding: 10px 0;
+  padding-right: 200px;
+  padding-left: 200px;
+}
+.top-address p {
+  margin-bottom: 0;
+}
+.top-address p span,
+.top-address p a {
+  margin-right: 20px;
+}
+.top-address p span i,
+.top-address p a i {
+  font-size: 13px;
+  color: #fff;
+  margin-right: 5px;
+}
+.top-address p a {
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* TOP RIGHT CSS */
+.top-right-menu ul.social-icons {
+  margin: 0;
+  padding: 0;
+}
+.top-right-menu ul.social-icons li {
+  display: inline-block;
+  margin-left: 15px;
+  position: relative;
+}
+.top-right-menu ul.social-icons li a {
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-size: 15px;
+}
+.top-address p a,
+.top-right-menu ul.social-icons li a,
+.top-address p span {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.top-right-menu .social-icons li a:hover,
+.top-right-menu .social-icons li a i:hover {
+  color: #17161a;
+}
+/* sub menu css */
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+/* top opening */
+/* address left right icon */
+/* mobile logo */
+.mobile_menu_logo.text-center {
+  padding: 20px 0;
+}
+/*===================== END solutech HEADING TOP AREA CSS =========================*/
+/*======================== EM CREATIVE HEADER =========================*/
+/* .no-logo-sr .creative_search_icon {
+     */
+/* position: absolute;
+     */
+/* right: 19%;
+     */
+/* top: 50%;
+     */
+/* */
+/* transform: translateY(-50%);
+     */
+/* z-index: 999;
+     */
+/* 
+}
+ */
+/* .no-logo-sr .em-quearys-top.msin-menu-search .em-quearys-inner {
+     */
+/* top: 70px;
+     */
+/* 
+}
+ */
+/*======================= solutech HEADING NAV AREA CSS ========================*/
+.solutech_nav_area {
+  background: #fff none repeat scroll 0% 0;
+  /* box-shadow: 0 0 65px 0 #00000008;
+     */
+  padding-right: 200px;
+  padding-left: 200px;
+}
+/* LOGO CSS */
+.logo {
+}
+.logo a {
+  font-size: 23px;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 20px;
+}
+.solutech_menu {
+}
+/* MENU CSS */
+.solutech_menu ul {
+  text-align: right;
+  list-style: none;
+}
+/* witr_h_h18 menu css */
+/* witr_h_h21 menu css */
+/* witr_h_h22 menu css */
+.solutech_menu > ul > li {
+  display: inline-block;
+  position: relative;
+}
+.solutech_menu > ul > li > a {
+  display: block;
+  margin: 38px 17px;
+  transition: 0.5s;
+  position: relative;
+  color: #222222;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: Cairo, sans-serif;
+}
+.solutech_menu > ul > li > a:before {
+  background: #ffb600 none repeat scroll 0% 0;
+  bottom: -7px;
+  content: "";
+  height: 2px;
+  left: 0;
+  margin: auto;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  width: 15%;
+  display: none;
+}
+.solutech_menu ul li:last-child a {
+  margin-right: 0px;
+}
+.solutech_menu > ul > li:hover > a {
+  color: #0c5adb;
+  background-color: transparent;
+}
+.solutech_menu > ul > li:hover > a:before {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+/* transparent 2 */
+/* stycky nav js */
+.solutech_nav_area.postfix {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* LOGO LEFT RIGHT CSS */
+.logo-left {
+}
+.logo-left .logo {
+  text-align: left;
+}
+
+/* logo top */
+
+/* sub menu style */
+/* sub menu 2 */
+/* sub menu 3 */
+/* sub menu 4 */
+/* user login */
+/* has menu icon */
+/* menu button */
+.donate-btn-header {
+  display: inline-block;
+}
+a.dtbtn {
+  border: none;
+  display: block;
+  font-size: 17px;
+  margin-left: 20px;
+  font-weight: 500;
+  background-color: #0c5adb;
+  border-radius: 30px;
+  color: #fff;
+  padding: 13px 25px;
+}
+a.dtbtn:hover {
+  background-color: #0c5adb;
+}
+/* logo sticky */
+.solutech-main-menu .logo a.main_sticky_main_l {
+  display: block;
+}
+.solutech-main-menu .logo a.main_sticky_l {
+  display: none;
+}
+/* logo pre */
+/* sticky logo */
+/*======================= END solutech HEADING NAV AREA CSS ========================*/
+/*===================== solutech BLOG AREA CSS =========================*/
+/* BLOG THUMB CSS */
+/* BLOG TITLE AND CONTENT CSS */
+/* BLOG POST META CSS */
+/* BLOG POST META LEFT CSS */
+/* left style 1 */
+/* BLOG POST META RIGHT CSS */
+/* blog readmore */
+/* blog hover */
+/*======================== EMD solutech BLOG AREA CSS =========================*/
+/*======================== solutech BLOG DETAILS AREA CSS =========================*/
+/*======================== solutech COMMENT AREA CSS =========================*/
+/* POST REPLY CSS */
+/* COMMENT FORM CSS */
+/* .comment_field .input-field:nth-child(odd){
+     margin-right:1%;
+}
+ .comment_field .input-field:nth-child(even){
+     margin-left:1%;
+}
+ */
+/*======================== solutech unittest =========================*/
+/* single blog */
+/*======================== solutech PAGINATION AREA CSS =========================*/
+/*======================== solutech BREADCRUMB AREA CSS =========================*/
+/*======================== END solutech BREADCRUMB AREA CSS =========================*/
+/*======================== solutech 404 AREA CSS =========================*/
+/* search error */
+/*======================== END solutech 404 AREA CSS =========================*/
+/*======================== solutech FOOTER TOP AREA CSS =========================*/
+/*======================== solutech FOOTER TOP AREA CSS =========================*/
+/*======================== END FOOTER TOP AREA CSS =========================*/
+/*======================== solutech FOOTER MIDDLE AREA CSS =========================*/
+.witrfm_area {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(assets/images/blog9.jpg);
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.witrfm_area:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #153d7af2;
+  z-index: -1;
+}
+.footer-middle {
+  padding: 65px 0 73px;
+}
+.footer-middle .widget h2 {
+  margin-bottom: 28px;
+  margin-top: 28px;
+  position: relative;
+}
+.footer-middle .widget h2:before {
+}
+/*======================== END FOOTER middle AREA CSS =========================*/
+/*======================== solutech FOOTER BOTTOM AREA CSS =========================*/
+.footer-bottom {
+  padding: 26px 0 24px;
+  position: relative;
+}
+.footer-bottom:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  background: #ffffff61;
+  height: 1px;
+  width: 68%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.copy-right-text {
+  text-align: left;
+}
+.copy-right-text p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+.footer-menu ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.footer-menu ul li {
+  display: inline-block;
+}
+.footer-menu ul li a {
+  padding: 0 10px;
+  display: block;
+  color: #fff;
+}
+.footer-menu ul li a:hover {
+  color: #0c5adb;
+}
+.footer-menu ul li:last-child a {
+  padding-right: 0px;
+}
+/*======================== END FOOTER BOTTOM AREA CSS =========================*/
+/*======================== EM40 SCROLL TOP CSS =========================*/
+#scrollUp {
+  background: #0c5adb none repeat scroll 0% 0;
+  bottom: 30px;
+  color: #fff;
+  font-size: 30px;
+  height: 40px;
+  line-height: 40px;
+  right: 100px;
+  text-align: center;
+  border-radius: 5px;
+  width: 40px;
+  /* animation: witr_bounce 800ms ease-out infinite;
+     */
+}
+#scrollUp i {
+  color: #fff;
+}
+/*======================== END EM40 SCROLL TOP CSS =========================*/
+/* kc element */
+/* title css */
+.witr_section_title {
+  position: relative;
+}
+.witr_section_title_inner {
+  position: relative;
+  z-index: 1;
+}
+.witr_section_title_inner h2,
+.witr_section_title_inner h3 {
+  font-size: 45px;
+  margin: auto;
+  font-weight: 700;
+}
+.witr_section_title_inner h2 {
+  font-size: 26px;
+  color: #0c5adb;
+  margin-bottom: 13px;
+  display: inline-block;
+}
+.witr_section_title_inner h3 {
+}
+.witr_section_title_inner p {
+  margin-top: 10px;
+}
+.witr_section_title_inner.text-center p {
+  width: 74%;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* bar color title */
+/* title extrat style */
+/* circale Bar css */
+/*===================== solutech feature SECTION =========================*/
+/* carsol feature 10 */
+/* carsol feature 11 */
+/*===================== END solutech SERVICE CSS =========================*/
+/* .em-service-icon {
+     font-size: 35px;
+}
+ */
+/* style 2 */
+/* service style 9 */
+/* witr service Style 10 */
+/* witr service Style 11 */
+/* witr service Style 12 */
+/* witr service post Style 12 */
+/*===================== solutech FUN FACT AREA CSS =========================*/
+/*===================== TESTIMONIAL AREA CSS =========================*/
+/* ts10 */
+.slick-slide:focus {
+  border: none;
+  outline: none;
+}
+.slick-slide {
+  border: none;
+  outline: none;
+}
+/* recent post */
+.footer-address {
+  padding-top: 12px;
+}
+.footer-widget.address,
+.footer-widget.address p {
+  color: #fff;
+}
+.footer_s_inner {
+  margin-top: 0px;
+}
+.footer-sociala-icon {
+  clear: both;
+  float: left;
+  font-size: 18px;
+  margin-right: 12px;
+}
+/* recent-review */
+/*===================== solutech adn blog css =========================*/
+/* BLOG THUMB CSS */
+/* BLOG TITLE AND CONTENT CSS */
+/* style 7 */
+/* BLOG POST META CSS */
+/* BLOG POST META LEFT CSS */
+/* left style 1 */
+/* BLOG POST META RIGHT CSS */
+/* blog readmore */
+/* blog hover */
+/* responsive 320 start */
+/* small mobile :320px. */
+@media (max-width: 479px) {
+  body {
+    overflow-x: hidden;
+  }
+  .solutech-header-top {
+    /* display: none;
+         */
+  }
+  .top-right-menu ul.social-icons li {
+    margin-left: 13px;
+  }
+}
+/* responsive 320 end */
+/* singleService */
+/* wirt_s2_s8 */
+/* unit test footer*/
+.footer-middle .widget h2 {
+  color: #fff;
+}
+.mobile-menu {
+  display: none !important;
+}
+.mobile_logo_area {
+  display: none !important;
+}
+/* Social Feed Css */
+/* icon */
+/* left */
+/* right */
+.witr_h_h10 .solutech_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+/* social icon menu style */
+.donate-btn-header {
+  /* padding: 28px 0px 24px;
+     */
+}
+/* New Top Menu Css */
+/* video icon css */
+/* slider image thumb position */
+/* footer text des */
+.solutech-description-area {
+}
+.solutech-description-area a {
+}
+.solutech-description-area a img {
+  margin: 26px 0;
+}
+.solutech-description-area p {
+  color: #fff;
+}
+.footer-middle .solutech-description-area p {
+}
+.social-icons {
+  text-align: left;
+}
+.solutech-description-area .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  background: transparent;
+  text-align: center;
+  border-radius: 30px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.solutech-description-area .social-icons a:hover {
+  background: #0c5adb;
+  border-color: #0c5adb;
+}
+/* circle progress */
+.footer-address {
+  padding-top: 0;
+}
+/* portfolio slides*/
+.witr_single_pslide {
+  position: relative;
+  overflow: hidden;
+}
+.witr_pslide_image {
+  overflow: hidden;
+  position: relative;
+  height: 540px;
+}
+.witr_pslide_image img {
+  margin-right: auto;
+  margin-left: auto;
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ps1 .witr_content_pslide_text {
+  position: absolute;
+  bottom: -100px;
+  left: 30px;
+  right: 30px;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 2;
+  text-align: left;
+}
+.ps1 .witr_single_pslide:hover .witr_content_pslide_text {
+  opacity: 1;
+  bottom: 30px;
+}
+.ps1 .witr_content_pslide {
+  /* float: left;
+     */
+}
+.witr_content_pslide_text h3 {
+  margin-bottom: 0;
+}
+.ps1 .witr_content_pslide_text h3 {
+  color: #fff;
+}
+.ps1 .witr_content_pslide_text h3:hover {
+  color: #0c5adb;
+}
+.ps1 .witr_content_pslide_text p {
+  color: #fff;
+}
+.witr_content_pslide_text p {
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+.witr_content_pslide_text a {
+  display: inline-block;
+}
+.ps1 .witr_content_pslide_text a {
+  color: #fff;
+}
+.ps1 .witr_content_pslide_text a:hover {
+  color: #0c5adb;
+}
+/* ps2 Slide */
+/* ps3 Slide css */
+.witr_pslide3 .witr_single_pslide {
+  margin-bottom: 100px;
+  overflow: inherit;
+}
+.ps3.ps1 .witr_content_pslide_text {
+  bottom: -60px;
+  opacity: 1;
+  box-shadow: 0px 0px 35px 0px #00000014;
+  background: #fff;
+  padding: 32px 40px 23px;
+  border-radius: 5px;
+}
+.ps3.ps1 .witr_single_pslide:hover .witr_content_pslide_text {
+  bottom: -60px;
+}
+.witr_number_pslide {
+  float: left;
+  margin-right: 22px;
+}
+.witr_number_pslide h4 {
+  font-size: 50px;
+  color: #0c5adb;
+}
+.ps3.ps1 .witr_content_pslide_text p,
+.ps3.ps1 .witr_content_pslide_text h3,
+.ps3.ps1 .witr_content_pslide_text a {
+  color: #000;
+}
+.ps3 .witr_content_pslide_text h3 a {
+  margin-bottom: 3px;
+}
+.ps3.ps1 .witr_content_pslide_text a:hover {
+  color: #0c5adb;
+}
+/* witr_pslide4 css */
+/* witr_pslide5 css */
+/* advance tab area css */
+/* sbnt 8 */
+/* Service Slick 11 */
+/*=========================== 7.case css ===========================*/
+/* case 2 style */
+/* menu new css */
+/* witr_table */
+.witr_table {
+}
+.witr_sub_table {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ffffff8c;
+  margin-bottom: 8px;
+}
+.witr_sub_table span {
+  color: #fff;
+}
+/* Swiper Slider Area Css */
+/* pagination bullet */
+/* progressbar */
+/* scrollbar */
+/* pagination prev next */
+.all_color_team {
+  transition: 0.5s;
+}
+/* button hover style */
+a.dtbtn {
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+a.dtbtn:hover {
+  background: #0c5adb;
+}
+a.dtbtn::before {
+  transition: 0.5s;
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  content: "";
+  bottom: 0;
+  left: -38px;
+  background: #00247e;
+  z-index: -1;
+  border-radius: 50px;
+}
+a.dtbtn:hover::before {
+  width: 100%;
+  left: 0px;
+  border-radius: 5px;
+}
+.witr_h_h10 .solutech_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  align-items: center;
+}
+.tx_relative_m,
+.tx_top2_relative {
+  position: relative;
+}
+.solutech_about_area {
+  padding: 95px 0px 60px;
+}
+.area-top {
+  margin-top: -115px !important;
+}
+.service_top {
+  margin-top: 48px;
+}
+.solutech_about_area .witr_content_pslide p {
+  color: #0c5adb !important;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 5px 0px 0px 0px;
+}
+.em-team.all_color_team {
+  margin-bottom: 30px;
+}
+.team_top {
+  margin-top: -40px;
+  justify-content: center;
+}
+.solutech_about_area {
+  padding: 40px 0px 63px;
+}
+/* solutech_counter_bg_area */
+/* solutech_alert_area css */
+/* solutech_make_service_area */
+/* blog_sidbar_css */
+/* solutech_contact2_area */
+/*========= contact-2 css ==========*/
+/* solutech_contact5_area */
+.solutech_project_area {
+  margin-top: 115px;
+  padding: 95px 30px 0px;
+}
+.project_top {
+  margin-top: 100px;
+}
+.solutech_team2_area {
+  padding: 0px 0px 55px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.video-grid video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+}
+.witr_pslide_image img {
+  margin-right: auto;
+  margin-left: auto;
+  transition: 0.5s;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+/*** uncss> filename: C:/Users/user/Desktop/Alhossainy - Ahmed Qandel/hossainy-website/assets/css/responsive.css ***/
+/* ------------------------------------------------- Large Screen. 1200 ---------------------------------------------------*/
+/* ------------------------------------------------- Large Screen. 1200 ---------------------------------------------------*/
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .solutech_menu > ul > li > a {
+    margin: 38px 7px 38px;
+  }
+}
+/* ------------------------------------------------- Large Screen. 1024 ---------------------------------------------------*/
+@media (min-width: 1024px) and (max-width: 1600px) {
+  /* banner area css */
+}
+/* ------------------------------------------------- Laptop Screen 1366 ---------------------------------------------------*/
+@media (min-width: 1170px) and (max-width: 1366px) {
+  /* banner area css */
+}
+/* ------------------------------------------------- Old Desktop :1365-1660 ---------------------------------------------------*/
+@media (min-width: 1365px) and (max-width: 1660px) {
+  /* New Top Menu css */
+  .solutech_nav_area,
+  .solutech-header-top {
+    padding-right: 50px !important;
+    padding-left: 50px !important;
+  }
+  #scrollUp {
+    right: 65px;
+    bottom: 92px;
+  }
+  /* swiper slider */
+  /*======== slick slider ==========*/
+  .footer-bottom:before {
+    width: 90%;
+  }
+}
+/* ------------------------------------------------- Old Desktop :992 ---------------------------------------------------*/
+/* ------------------------------------------------- Old Desktop :992 ---------------------------------------------------*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* New Top Menu css */
+  .solutech_nav_area,
+  .solutech-header-top {
+    padding-right: 50px !important;
+    padding-left: 50px !important;
+  }
+  /* swiper slider */
+  /* nivo slider */
+  /*========= New Top Menu css ========*/
+  /*========= banner area css ========*/
+  /*======== banner_area 2 ==========*/
+  /*======== slick slider ==========*/
+  /*========== height css ===========*/
+  .solutech_menu > ul > li > a {
+    font-size: 15px;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  a.dtbtn {
+    font-size: 15px;
+  }
+  .witr_h_h10 .solutech_menu > ul > li > a {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  /* new css */
+  .witr_section_title_inner.text-center p {
+    width: 67%;
+  }
+  /* single_image */
+  /* witr_section_title */
+  .witr_section_title_inner h3 {
+    font-size: 40px;
+  }
+  /* text_widget css */
+  /* Screenshots css */
+  /* shortcode_content */
+  /* images_area */
+  /* blog css */
+  /* team css */
+  /* feature css */
+  /* service css */
+  /* testomonial style 8 css */
+  /* curosel-style css */
+  /* countdown css */
+  /* timeline css */
+  /* static tab css*/
+  .footer-bottom::before {
+    width: 95%;
+  }
+  /* add new css*/
+  /* causes */
+  /* event */
+  #scrollUp {
+    bottom: 85px;
+    right: 30px;
+  }
+  .witr_content_pslide_text a {
+    font-size: 20px;
+  }
+  .solutech_project_area {
+    padding: 100px 0px 0px;
+  }
+}
+/* ------------------------------------------------- Tablet Screen : 768 ---------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .solutech-header-top {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  /* swiper slider */
+  /* nivo slider */
+  /* banner area css */
+  /*=========== banner area 2 css ===============*/
+  /* animate_banner_area */
+  /*=========== Slick area css ===============*/
+  /* tutor */
+  /* Em-Creative Header */
+  /* section_title */
+  .witr_section_title_inner h3 {
+    font-size: 25px;
+  }
+  .witr_section_title_inner.text-center p {
+    width: 83%;
+  }
+  /* about css */
+  /* accourdion css */
+  /* service css */
+  /* single_image */
+  /* testomonial css */
+  /* testomonial style 8 css */
+  /* blog css */
+  /* Screenshots css */
+  /* about css */
+  /* counter css */
+  /* shortcode_content */
+  .footer-bottom:before {
+    width: 92%;
+  }
+  /* blog css */
+  /* call-to-action css */
+  /* single portfolio2 */
+  /* contact css */
+  /* countdown css */
+  /* curosel-style css */
+  /* timeline css */
+  /* static tab css*/
+  /*====== new css ======= */
+  /* ab_videoArea */
+  /* new css add */
+  #scrollUp {
+    bottom: 85px;
+    right: 30px;
+  }
+  /* solutech_features_area */
+  .witr_content_pslide_text a {
+    font-size: 20px;
+  }
+  .solutech_project_area {
+    padding: 100px 0px 0px;
+  }
+}
+/* ------------------------------------------------- Small Mobile : 320 ---------------------------------------------------*/
+@media (max-width: 767px) {
+  /* New Top Menu css */
+  /* swiper slider */
+  /* em-slider-title */
+  /*========= banner area css ===========*/
+  /*=========== banner area 2 css ===============*/
+  /* animate_banner_area */
+  /*=========== Slick area 2 css ===============*/
+  /* tutor */
+  /* top bar */
+  /* .top-address {
+         text-align: center;
+    }
+     .social-icons.text-right {
+         text-align: center;
+    }
+     */
+  .top-address p a,
+  .top-right-menu ul.social-icons li a,
+  .top-address p span {
+    font-size: 13px;
+  }
+  .top-right-menu ul.social-icons {
+  }
+  /* footer bar */
+  .footer-menu ul {
+    margin: 10px 0 0;
+    text-align: center !important;
+  }
+  .footer-menu ul li a {
+    font-size: 14px;
+  }
+  .copy-right-text p {
+    text-align: center;
+  }
+  .footer-bottom:before {
+    width: 90%;
+  }
+  /* blog css */
+  /* single blog */
+  /* footer css */
+  .copy-right-text p {
+    font-size: 11px;
+  }
+  /* Em-Creative Header */
+  /* new css */
+  /* footer css */
+  .copy-right-text p {
+    font-size: 15px;
+  }
+  /* section title css */
+  .witr_section_title_inner h2,
+  .witr_section_title_inner h3 {
+    font-size: 21px;
+    line-height: 30px;
+  }
+  .witr_section_title_inner h2 {
+    margin-bottom: 4px;
+    font-size: 15px;
+  }
+  .witr_section_title_inner.text-center p {
+    width: 100%;
+  }
+  .witr_section_title_inner p {
+    padding-top: 10px;
+  }
+  .witr_section_title {
+    text-align: center;
+  }
+  /* about css */
+  /* feature area */
+  /* Screenshots css */
+  /* countdown css */
+  /* testomonial css */
+  /* testomonial style 8 css */
+  /* service css */
+  /* tab css */
+  /* accourdion css */
+  /* blog css */
+  /* counter css */
+  /* video css */
+  /* contact css */
+  /* apps_button css */
+  /* blog css */
+  .footer-middle {
+    text-align: center;
+  }
+  /* call to action */
+  /* shortcode_content */
+  /* single portfolio2 */
+  /* single_protfolio css */
+  /* contact css */
+  /* display none css*/
+  .slick-prev,
+  .slick-next {
+    display: none;
+  }
+  /* timeline css*/
+  /* static tab css*/
+  .solutech-header-top {
+    display: none;
+  }
+  .footer-sociala-icon {
+    float: none;
+  }
+  .footer-sociala-info p {
+    text-align: center;
+  }
+  /*====== new css ======= */
+  /* ab_videoArea */
+  /* service */
+  /* icon_section */
+  /* single_image */
+  /* about css */
+  /* team css */
+  /* new css add */
+  .ps1 .witr_content_pslide_text {
+    padding: 0 10px 20px;
+  }
+  .witr_content_pslide_text h3 {
+    font-size: 19px;
+  }
+  .ps1 .witr_content_pslide_text {
+    left: 15px;
+    right: 15px;
+  }
+  .ps3.ps1 .witr_content_pslide_text {
+    padding: 18px 20px 23px;
+  }
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+  #scrollUp {
+    bottom: 92px;
+    right: 30px;
+  }
+  .social-icons {
+    text-align: center;
+  }
+  .witr_number_pslide {
+    float: none;
+  }
+  .witr_number_pslide h4 {
+    font-size: 30px;
+  }
+  .witr_content_pslide_text a {
+    font-size: 21px;
+  }
+  .solutech_project_area {
+    padding: 100px 0px 0px;
+  }
+}
+/* ------------------------------------------------- Large Mobile :480px. ---------------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /*=========== banner area 2 css ===============*/
+  /* portfolio css */
+  /* banner area css */
+  /* section_title */
+  .witr_section_title_inner h2,
+  .witr_section_title_inner h3 {
+    font-size: 25px;
+  }
+  .witr_section_title_inner.text-center p {
+    width: 91%;
+  }
+  /* text_widget css */
+  /* blog css */
+  /* Screenshots css */
+  .solutech-header-top {
+    display: block;
+  }
+}
+/* menu and logo show & hide */
+@media (min-width: 10px) and (max-width: 991px) {
+  .mobile-menu {
+    display: block !important;
+  }
+  .mobile_logo_area {
+    display: block !important;
+  }
+  .solutech-main-menu {
+    display: none !important;
+  }
+}
+@media (min-width: 10px) and (max-width: 991px) {
+  .text_m_center {
+    text-align: center !important;
+  }
+}
+@media (min-width: 10px) and (max-width: 570px) {
+  .solutech-header-top {
+    display: none;
+  }
+}
+.socials {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  flex-direction: column;
+  padding-top: 10px;
+  gap: 6px;
+}
+.socials p {
+  margin: 0;
+}
+.socials ul {
+  display: flex;
+  gap: 18px;
+}
